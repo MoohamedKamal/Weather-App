@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Oswald", sans-serif;
+    color: #BFC1C8;
+    letter-spacing: 1.5px;
+}
+:root{
+    --color-1--:#1E202B;
+    --color-2--:#2D303D;
+    --color-3--:#323544;
+    --color-4--:#222530;
+    --color-5--:#262936;
+    --color-6--:#37373F;
+    --color-7--:#4F4F5A;
+    --color-8--:#1E202B;
+    --color-9--:#009AD8;
+}
+.navbar{
+    background-color: var(--color-1--);
+}
+section{
+    background-color: var(--color-1--);
+    height: 580px;
+}
+.bg-img{
+    background-image: url(../images/banner.png);
+    height: 340px;
+    background-position: center center;
+    background-size: cover;
+}
+footer{
+    background-color: var(--color-5--);
+    height: 220px;
+}
+.contact-social{
+    color: var(--color-9--);
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--color-8--);
+    padding: 1.25rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.contact-social:hover{
+    color: white;
+    background-color: var(--color-9--);
+}
+::-webkit-input-placeholder {
+    color: rgb(131, 129, 129) !important;
+    letter-spacing: 1px !important;
+    padding-left: 5px !important;
+}
+.form-control{
+    background-color: var(--color-1--);
+    border: none;
+}
+.find-input{
+    top: 20% !important;
+    width: 85%;
+}
+#search:focus{
+background-color: var(--color-1--);
+color: white;
+letter-spacing: 1.5px;
+}
+.subscribe:focus{
+    background-color: var(--color-1--);
+    color: white;
+    letter-spacing: 1.5px;
+}
+#forecast{
+    width: 85%;
+}
+.bg-1{
+    background-color: var(--color-2--);
+}
+.bg-2{
+    background-color: var(--color-4--);
+}
+#today{
+    background-color: var(--color-3--);
+    height: 350px;
+}
+.tomorrow{
+    background-color: var(--color-5--);
+    height: 350px;
+}
+.after-tomorrow{
+    background-color: var(--color-3--);
+    height: 350px;
+}
+#temprature{
+    font-size: 50px;
+}
+.row{
+    --bs-gutter-x: 0;
+}
+.btn{
+    letter-spacing: 1.5px;
+}
+#todayTemprature{
+    font-size: 4rem;
+}
+.oc{
+    font-size: 4rem;
+}
+/* media query */
+/* xs */
+@media all and (min-width:0px) and (max-width:600px){
+    section{
+        height: 1250px;
+    }
+    .bg-img{
+        height: 500px;
+    }
+    .contact-icons{
+        justify-content: flex-start !important ;
+    }
+    .phrase{
+        margin-top: 20px !important;
+    }
+    #forecast{
+        top: 25% !important;
+    }
+    .find-input{
+        top: 7% !important;
+    }
+}
+
+/* sm */
+@media all and (min-width:601px) and (max-width:768px)
+{
+    section{
+        height: 1250px;
+    }
+    .bg-img{
+        height: 500px;
+    }
+    .contact-icons{
+        justify-content: flex-start !important;
+    }
+    .phrase{
+        margin-top: 20px !important;
+    }
+    #forecast{
+        top: 25% !important;
+    }
+    .find-input{
+        top: 7% !important;
+    }
+}

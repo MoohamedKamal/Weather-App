@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar py-5">
+        <div class="container-fluid d-flex justify-content-center">
+            <span><img src="images/logo.png" alt="Logo" width="60" height="40" class="pe-2"></span>
+            <a class="navbar-brand fs-1 text-white" href="#">Weather</a>
+        </div>
+    </nav>
+
+    <section>
+        <div class="bg-img position-relative">
+            <div class="find-input position-absolute start-50 translate-middle-x">
+                <input id="search" type="text" class="form-control rounded-pill border border-primary  py-3"
+                    placeholder="Find your location..">
+            </div>
+            <div class=" position-absolute top-50 start-50 translate-middle-x border border-primary rounded-3 overflow-hidden"
+                id="forecast">
+                <div class="row ">
+                    <!-- Today section -->
+                    <div id="today" class="col-md-4 p-0">
+                        <div class=" bg-1 d-flex justify-content-between p-2">
+                            <span id="todayName">Thursday</span>
+                            <span>
+                                <span id="todayNumber">15</span>
+                                <span id="todayMonth">August</span>
+                            </span>
+                        </div>
+                        <div class="pt-5 ps-3">
+                            <h5 id="todayCity"></h5>
+                            <div class="d-flex align-items-center">
+                                <span id="todayTemprature" class="text-white"></span>
+                                <span class="text-white oc px-2"><sup>o</sup>C</span>
+                                <span><img id="todayIcon" alt="" width="90"></span>
+                            </div>
+                            <div class="pt-4">
+                                <p id="todayState" class="text-primary">Sunny</p>
+                                <span id="humidity">20</span><span>%</span>
+                                <img class="d-inline pe-3" src="images/icon-umberella.png" alt="">
+                                <span id="wind"> 18</span><span>km/h</span>
+                                <img class="d-inline pe-3" src="images/icon-wind.png" alt="">
+                                <span id="windDirection"> East</span>
+                                <img class="d-inline" src="images/icon-compass.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tomorrow section -->
+                    <div class="tomorrow col-md-4 p-0">
+                        <div class="bg-2 d-flex justify-content-center p-2">
+                            <span class="TomorrowName">Friday</span>
+                        </div>
+                        <div class="text-center pt-5">
+                            <img class="TomorrowIcon pb-3" alt="" width="60">
+                            <div>
+                                <span class="maxTemp text-white fs-4"></span>
+                                <span class="text-white fs-4"><sup>o</sup>C</span>
+                                <span>(Max)</span>
+                            </div>
+                            <div>
+                                <span class="minTemp pb-2"></span>
+                                <span><sup>o</sup>C</span>
+                                <span>(Min)</span>
+                            </div>
+                            <h6 class="tomorrowState text-primary pt-3 fw-normal">Sunny</h6>
+                        </div>
+                    </div>
+                    <!-- after tomorrow section -->
+                    <div class="after-tomorrow col-md-4  p-0">
+                        <div class=" bg-1 d-flex justify-content-center p-2">
+                            <span class="TomorrowName">Saturday</span>
+                        </div>
+                        <div class="text-center pt-5">
+                            <img class="TomorrowIcon pb-3" alt="" width="60">
+                            <div>
+                                <span class="maxTemp text-white fs-4"></span>
+                                <span class="text-white fs-4"><sup>o</sup>C</span>
+                                <span>(Max)</span>
+                            </div>
+                            <div>
+                                <span class="minTemp pb-2"></span>
+                                <span><sup>o</sup>C</span>
+                                <span>(Min)</span>
+                            </div>
+                            <h6 class="tomorrowState text-primary pt-3 fw-normal">Sunny</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="input-group">
+                        <input type="text" class="subscribe form-control py-2" placeholder="Enter your email to subscribe..">
+                        <button class="btn btn-outline-primary " type="button">Subscribe</button>
+                    </div>
+                    <p class="text-secondary phrase mt-4">Copyright 2014 Company name. Designed by Themezy. All rights
+                        reserved
+                    </p>
+                </div>
+                <div class="col-md-4 offset-md-1">
+                    <div class="contact-icons d-flex">
+                        <div
+                            class="contact-social d-flex justify-content-center align-items-center rounded-circle me-3">
+                            <i class="fa-brands fa-facebook-f fs-5"></i>
+                        </div>
+                        <div
+                            class="contact-social d-flex justify-content-center align-items-center rounded-circle me-3">
+                            <i class="fa-brands fa-twitter fs-5"></i>
+                        </div>
+                        <div
+                            class="contact-social d-flex justify-content-center align-items-center rounded-circle me-3">
+                            <i class="fa-brands fa-google-plus-g fs-5"></i>
+                        </div>
+                        <div class="contact-social d-flex justify-content-center align-items-center rounded-circle">
+                            <i class="fa-brands fa-threads fs-5"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
