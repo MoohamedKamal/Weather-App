@@ -23,7 +23,7 @@ let search = document.getElementById('search');
 async function getWeatherData(cityName){
     // https://api.weatherapi.com/v1/current.json?key=9cef9568fc064240a5d214437250201&q=${cityName}&aqi=no
 
-    let weatherData = await fetch(`https://api.weatherapi.com/v1/current.json?key=9cef9568fc064240a5d214437250201&q=${cityName}&&days=3`);
+    let weatherData = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=9cef9568fc064240a5d214437250201&q=London&days=3&aqi=no&alerts=no`);
     let weatherResponse = await weatherData.json();
     return weatherResponse;      
 }
