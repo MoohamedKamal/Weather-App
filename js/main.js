@@ -59,8 +59,6 @@ async function startApp(city = "Cairo") {
   if (!weatherResponse.error) {
     displayToday(weatherResponse);
     displayNextDays(weatherResponse);
-  } else {
-    alert("City not found. Please try again.");
   }
 }
 
