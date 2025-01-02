@@ -21,7 +21,9 @@ let tomorrowState = document.getElementsByClassName('tomorrowState');
 let search = document.getElementById('search');
 
 async function getWeatherData(cityName){
-    let weatherData = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=8e1d758445094eb48d6200157241808&q=${cityName}&days=3`);
+    // https://api.weatherapi.com/v1/current.json?key=9cef9568fc064240a5d214437250201&q=${cityName}&aqi=no
+
+    let weatherData = await fetch(`https://api.weatherapi.com/v1/current.json?key=9cef9568fc064240a5d214437250201&q=${cityName}&aqi=no`);
     let weatherResponse = await weatherData.json();
     return weatherResponse;      
 }
