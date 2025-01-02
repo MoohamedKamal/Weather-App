@@ -21,7 +21,7 @@ let tomorrowState = document.getElementsByClassName('tomorrowState');
 let search = document.getElementById('search');
 
 async function getWeatherData(cityName){
-    let weatherData = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=8e1d758445094eb48d6200157241808&q=${cityName}&days=3`);
+    let weatherData = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=8e1d758445094eb48d6200157241808&q=${cityName}&days=3`);
     let weatherResponse = await weatherData.json();
     return weatherResponse;      
 }
