@@ -22,7 +22,7 @@ async function getWeatherData(cityName) {
 
 function displayToday(data) {
   todayCity.textContent = data.location.name;
-  todayTemprature.textContent = `${data.current.temp_c}°C`;
+  todayTemprature.textContent = `${data.current.temp_c}`;
   todayState.textContent = data.current.condition.text;
   todayIcon.src = `https:${data.current.condition.icon}`;
   humidity.textContent = `${data.current.humidity}%`;
@@ -48,8 +48,8 @@ function displayNextDays(data) {
       { weekday: "long" }
     );
     tomorrowElements[index * 5 + 1].src = `https:${day.day.condition.icon}`;
-    tomorrowElements[index * 5 + 2].textContent = `${day.day.maxtemp_c}°C`;
-    tomorrowElements[index * 5 + 3].textContent = `${day.day.mintemp_c}°C`;
+    tomorrowElements[index * 5 + 2].textContent = `${day.day.maxtemp_c}`;
+    tomorrowElements[index * 5 + 3].textContent = `${day.day.mintemp_c}`;
     tomorrowElements[index * 5 + 4].textContent = day.day.condition.text;
   });
 }
